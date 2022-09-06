@@ -1,0 +1,14 @@
+stages:
+  - build  
+
+Build NodeJS App:
+   rules:
+       - if: $CI_COMMIT_BRANCH == "main"
+   stage: build
+   script:
+     - git checkout main
+     - git pull origin main
+     - npm i
+   artifacts:
+     paths:
+       - node_modules
