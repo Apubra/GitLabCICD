@@ -17,3 +17,6 @@ sudo gitlab-runner register
 Note: Use shell if you want to run the command instead of docker.
 
 You can run multiple repo in single VM using one runner. Just register the new one.
+
+
+Note: Must Enable shared runners for this project OFF!
